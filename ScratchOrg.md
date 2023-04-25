@@ -25,8 +25,8 @@ sfdx auth web login -d -a DevHubYourBrand
   "orgName": "LPS Internal CRM",
   "country": "HK",
   "language": "En",
-  "adminEmail": "o.mh.liu@pccw.com",
-  "username": "lps-dev-01@pccw.com",
+  "adminEmail": "o.mh.liu@gmail.com",
+  "username": "lps-dev-03@pccw.com",
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi"],
   "settings": {
@@ -47,7 +47,7 @@ sfdx org create scratch -a dev01 -y 30 -f config/project-scratch-def.json
 
 ## 7. generate password and change password
 ```
-sfdx force user password generate -u dev01
+sfdx force user password generate -u dev03
 ```
 
 ## 8. check org info 
@@ -56,27 +56,24 @@ sfdx org list --all
 sfdx org display --target-org dev03
 ```
 
-The example result:
-```
-=== Org Description
-
- KEY             VALUE                                                                                                  
- ─────────────── ────────────────────────────────────────────────────────────────────────────────────────────────────── 
- Access Token    00D0p0000001pbQ!AQoAQO.7QuoqyTpaxn19RYIKvjM0AWzhfTcaC0FxNtOkzlHCA3SseWmcat9wJnVWHfDNtVvYm_NqqT6vv_Bao… 
- Alias           stage                                                                                                  
- Client Id       PlatformCLI                                                                                            
- Created By      oscar.m.liu@mindful-moose-tip0lh.com                                                                   
- Created Date    2023-02-19T05:47:44.000+0000                                                                           
- Dev Hub Id      oscar.m.liu@mindful-moose-tip0lh.com                                                                   
- Edition         Developer                                                                                              
- Expiration Date 2023-03-21                                                                                             
- Id              00D0p0000001pbQEAQ                                                                                     
- Instance Url    https://drive-momentum-797-dev-ed.scratch.my.salesforce.com                                            
- Org Name        Scratch Org 1                                                                                          
- Password        mjvtbhC5tn(vl                                                                                          
- Signup Username test-pccwdemo-xxxx@sample.com                                                                          
- Status          Active                                                                                                 
- Username        test-pccwdemo-xxxx@sample.com
+The exampleKEY             VALUE                                                                                                            
+ ─────────────── ──────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+ Access Token    00D0l000000H4Xe!AQ0AQH2KOOpqELjiju5xnmkcgBOKgU3hlaALHUVu70Krm7ySI9YH_BBW.OS5h5Uoruqnq7830rZ9xcIhECALvU2ore1X9qht 
+ Alias           dev03                                                                                                            
+ Api Version     57.0                                                                                                             
+ Client Id       PlatformCLI                                                                                                      
+ Created By      system.devops@pccw.com                                                                                           
+ Created Date    2023-04-25T07:48:05.000+0000                                                                                     
+ Dev Hub Id      system.devops@pccw.com                                                                                           
+ Edition         Developer                                                                                                        
+ Expiration Date 2023-05-25                                                                                                       
+ Id              00D0l000000H4XeEAK                                                                                               
+ Instance Url    https://efficiency-drive-7494-dev-ed.scratch.my.salesforce.com                                                   
+ Org Name        LPS Internal CRM                                                                                                 
+ Password        Ejbw7zrv&qjtz                                                                                                    
+ Signup Username lps-dev-03@pccw.com                                                                                              
+ Status          Active                                                                                                           
+ Username        lps-dev-03@pccw.com      
 
 ```
 
