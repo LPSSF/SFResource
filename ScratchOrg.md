@@ -53,7 +53,7 @@ sfdx force user password generate -u dev01
 ## 8. check org info 
 ```
 sfdx org list --all
-sfdx org display --target-org stage
+sfdx org display --target-org dev03
 ```
 
 The example result:
