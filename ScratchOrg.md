@@ -40,7 +40,7 @@ sfdx auth web login -d -a DevHubYourBrand
 }
 
 ```
-## 6. make scratch org 
+## 6. make scratch org , you need auth a devhub firstly before execute the below command 
 ```
 sfdx org create scratch -a dev01 -y 30 -f config/project-scratch-def.json
 ```
