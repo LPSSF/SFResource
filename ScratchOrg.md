@@ -16,8 +16,8 @@ sfdx update
 
 ## 4. Set DevHub
 ```
-sfdx auth:web:login --setdefaultdevhubusername --setalias DevHubYourBrand
-sfdx auth web login -d -a DevHubYourBrand
+sfdx auth web login -d -a pccwdevops
+
 ```
 ## 5. Make project-scratch-def.json
 ```
@@ -42,7 +42,7 @@ sfdx auth web login -d -a DevHubYourBrand
 ```
 ## 6. make scratch org , you need auth a devhub firstly before execute the below command 
 ```
-sfdx org create scratch -a dev01 -y 30 -f config/project-scratch-def.json
+sfdx org create scratch -a dev03 -y 30 -f config/project-scratch-def.json
 ```
 
 ## 7. generate password and change password
@@ -54,6 +54,7 @@ sfdx force user password generate -u dev03
 ```
 sfdx org list --all
 sfdx org display --target-org dev03
+
 ```
 
 The exampleKEY             VALUE                                                                                                            
@@ -74,6 +75,8 @@ The exampleKEY             VALUE
  Signup Username lps-dev-03@pccw.com                                                                                              
  Status          Active                                                                                                           
  Username        lps-dev-03@pccw.com      
+
+
 
 ```
 
