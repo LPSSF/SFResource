@@ -1,7 +1,7 @@
 # Create Dev User in Salesforce
 
 
-## create user with dev's email 
+## create user with dev's email, alias name dev**
 
 1. Role = null
 2. User License = Salesforce 
