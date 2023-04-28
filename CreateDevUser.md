@@ -10,5 +10,5 @@
 5. Assign permission sets: 	DevOps Center, sf_devops_NamedCredentials
 
 
-As a result, Dev do not have visibility of business data outsiede of DevOps Center.
+As a result, Dev do not have visibility of business data outside of DevOps Center.
 
