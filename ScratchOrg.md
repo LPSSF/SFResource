@@ -28,6 +28,7 @@ sfdx auth web login -d -a pccwdevops
   "adminEmail": "o.mh.liu@gmail.com",
   "username": "lps-dev-03@pccw.com",
   "edition": "Developer",
+  "hasSampleData": "TRUE",
   "features": ["EnableSetPasswordInApi"],
   "settings": {
     "lightningExperienceSettings": {
@@ -38,6 +39,8 @@ sfdx auth web login -d -a pccwdevops
     }
   }
 }
+
+
 
 ```
 ## 6. make scratch org , you need auth a devhub firstly before execute the below command 
