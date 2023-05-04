@@ -83,7 +83,7 @@ The exampleKEY             VALUE
 
 ```
 
-## 9. User get the email and change password 
+## 9. User with init logon username and password login this scratch org and then change password 
 
 ## 10. login into DevOps center and get to project "OM" -> Pipileine -> Environments -> Add Development Environment and login as the given logon user name and the new password.
 
