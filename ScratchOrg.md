@@ -45,25 +45,25 @@ sfdx auth web login -d -a pccwdevops
 ```
 ## 6. make scratch org , you need auth a devhub firstly before execute the below command 
 ```
-sfdx org create scratch -a dev03 -y 30 -f config/project-scratch-def.json
+sfdx org create scratch -a lpsdev11 -y 30 -f config/project-scratch-def.json
 ```
 
 ## 7. generate password and change password
 ```
-sfdx force user password generate -u dev03
+sfdx force user password generate -u lpsdev11
 ```
 
 ## 8. check org info 
 ```
 sfdx org list --all
-sfdx org display --target-org dev03
+sfdx org display --target-org lpsdev11
 
 
 
 The exampleKEY             VALUE                                                                                                            
  ─────────────── ──────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
  Access Token    00D0l000000H4Xe!AQ0AQH2KOOpqELjiju5xnmkcgBOKgU3hlaALHUVu70Krm7ySI9YH_BBW.OS5h5Uoruqnq7830rZ9xcIhECALvU2ore1X9qht 
- Alias           dev03                                                                                                            
+ Alias           lpsdev11                                                                                                            
  Api Version     57.0                                                                                                             
  Client Id       PlatformCLI                                                                                                      
  Created By      system.devops@pccw.com                                                                                           
@@ -82,4 +82,9 @@ The exampleKEY             VALUE
 
 
 ```
+
+## 9. User get the email and change password 
+
+## 10. login into DevOps center and get to project "OM" -> Pipileine -> Environments -> Add Development Environment and login as the given logon user name and the new password.
+
 
